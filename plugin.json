@@ -1,0 +1,73 @@
+{
+	"name": "Vimeo Import",
+	"version": "1.1.9",
+	"description": "Imports videos from Vimeo to the Koken library.",
+	"description_long": "These options define the default settings for all imported Vimeo videos.",
+	"demo": "http://koken.me",
+	"author": {
+		"name": "Koken",
+		"link": "https://store.koken.me/authors/koken"
+	},
+
+	"koken_version_required": "0.22.6-beta.6",
+
+	"data": {
+		"username": {
+			"label": "Name",
+			"type": "string",
+			"value": "",
+			"info": "Your Vimeo account name. You may find this at Vimeo through My Settings > Account."
+		},
+		"assign_tag": {
+			"label": "Assign \"vimeo\" tag to all imported videos",
+			"type": "boolean",
+			"header": "Import",
+			"value": false,
+			"info": "This will assign a Koken tag named \"vimeo\" to everything imported from Vimeo. Handy for viewing all imported Vimeo videos on your site."
+		},
+		"tags": {
+			"label": "Assign tags from Vimeo",
+			"type": "boolean",
+			"value": false,
+			"info": "Automatically imports the assigned tags from Vimeo."
+		},
+		"portrait": {
+			"label": "Show portrait on videos",
+			"type": "boolean",
+			"header": "Intro text",
+			"value": false,
+			"info": "Displays the video author's avatar in the Vimeo player's pre-playback state."
+		},
+		"title": {
+			"label": "Show title on videos",
+			"type": "boolean",
+			"value": false,
+			"info": "Displays the video title in the Vimeo player's pre-playback state."
+		},
+		"byline": {
+			"label": "Show byline on videos",
+			"type": "boolean",
+			"header": "General",
+			"value": false,
+			"info": "Displays the video's byline in the Vimeo player's pre-playback state."
+		},
+		"autoplay": {
+			"label": "Autoplay videos",
+			"type": "boolean",
+			"value": false,
+			"info": "All imported videos will automatically playback in the Vimeo player."
+		},
+		"loop": {
+			"label": "Loop videos",
+			"type": "boolean",
+			"value": false,
+			"info": "All imported videos will restart instead of stopping in the Vimeo player."
+		},
+		"color": {
+			"label": "Color",
+			"type": "color",
+			"value": "#00adef",
+			"info": "Color of the title, buttons and other elements in the Vimeo player."
+		}
+	}
+}

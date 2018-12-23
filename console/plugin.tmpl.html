@@ -1,0 +1,79 @@
+<script id="vimeoImportSection" type="text/html">
+<div id="vimeo_import_by_url" style="display:none;margin-bottom:15px">
+	<hr style="clear:both;">
+	<div class="media-browse-headr top">
+		<div class="sheet-wrap">
+			<img class="vimeo-account-avatar plugin_avatar" width="21" height="21" />
+				<strong class="vimeo-account-name"></strong>
+				<br>
+			Select a video from <a href="#" id="vimeo-switch-list" title="Import one or more videos from your latest uploads">your latest uploads</a> or enter a <a href="#" id="vimeo-switch-page" title="Import video by enterings its Vimeo page URL">page url</a>.
+		</div>
+	</div>
+	<hr style="clear:both;">
+	<div class="sheet-wrap">
+		<div class="section-content">
+			<ul class="table">
+				<li>
+					<span class="cell label">
+						<label for="">Video URL</label>
+					</span>
+					<span class="cell">
+						<input class="field col-wide" id="valid_vimeo_url" placeholder="http://vimeo.com/videoid" />
+							<span class="form-error-msg" style="display: none;">
+							<br />
+							Please enter a valid Vimeo url</span>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="vimeo_import_username" style="display:none;margin-bottom:15px">
+	<hr>
+	<div class="sheet-wrap">
+		<div class="section-content">
+			<p class="plus" style="margin:15px 0;">
+				Please enter your Vimeo account name to begin.
+			</p>
+			<ul class="table">
+				<li>
+					<span class="cell-row">
+						<label for="vimeo-username">Vimeo name</label>
+						&nbsp;&nbsp;
+						<input id="vimeo-username" class="field col-wide" />
+						&nbsp;
+						<button class="button sm sib" id="vimeo-add-username">
+							Connect
+						</button>
+					</span>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="vimeo_import_loading" class="plugin_event" style="display:none">
+<hr>
+<div class="sheet-wrap true">
+<div class="inner">
+	<span class="kspinner ks_tiny ks_tiny_offset"></span>Hang on, fetching Vimeo content...
+</div>
+</div>
+</div>
+<div id="vimeo_import_api_list" style="display:none">
+<hr style="clear:none;">
+<div class="media-browse-headr">
+	<div class="sheet-wrap">
+		<img class="vimeo-account-avatar plugin_avatar" width="21" height="21" />
+			<strong class="vimeo-account-name"></strong>
+			<br>
+		Select a video from <a href="#" id="vimeo-switch-list" title="Import one or more videos from your latest uploads">your latest uploads</a> or enter a <a href="#" id="vimeo-switch-page" title="Import video by enterings its Vimeo page URL">page url</a>.
+	</div>
+</div>
+<div id="vimeo-browse-middle-scroll" class="sheet-middle no-pad media-browse-middle" data-bind="scrollbar: true">
+<div class="media-browse-viewr">
+<ul class="plugin_content"></ul>
+</div>
+</div>
+</div>
+</script>
